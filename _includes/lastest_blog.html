@@ -1,0 +1,43 @@
+<!-- Section Lastest Blog -->
+<section class="padding ">
+	<div class="container">
+		<div class="row">
+			<div class="title-block">
+				<h2 class="title text-cap">События</h2>
+				<div class="divider divider-1">
+					<svg class="svg-triangle-icon-container">
+						<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+					</svg>
+				</div>
+			</div>
+			<!-- End Title -->
+
+			<div class="lastest-blog-container">
+				{% for event in site.data.events %}
+				<div class="col-md-6">
+					<article class="lastest-blog-item">
+						<figure class="latest-blog-post-img effect-zoe">
+							<a href="{{ event.href }}">
+								<img src="{{ event.img_src }}" class="img-responsive" alt="Image">
+							</a>
+							<div class="latest-blog-post-date text-cap">
+								<span class="{{ event.day }}">21</span>
+								<span class="{{ event.month }}">May</span>
+							</div>
+						</figure>
+						<div class="latest-blog-post-description">
+							<a href="{{ event.href }}"><h3>{{ event.header }}</h3></a>
+							<p>{{ event.description }}</p>
+
+							<a href="{{ event.href }}" class="ot-btn btn-main-color text-cap mgb0">
+								Продолжение...
+							</a>
+						</div>
+					</article>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Section Lastest Blog -->

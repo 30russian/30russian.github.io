@@ -1,0 +1,36 @@
+<!-- Section Services-->
+<section class="padding clearfix bg-dark">
+	<div class="chooseus-full-width">
+		<div class="title-block">
+			<h2 class="title text-cap white-text">Наши услуги</h2>
+			<div class="divider divider-2">
+				<svg class="svg-triangle-icon-container">
+					<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+				</svg>
+			</div>
+		</div>
+		<!-- End Title -->
+		<div class="chooseus-container text-center">
+			{% for service in site.data.our_services %}
+			<div class="chooseus-item mgb0">
+
+				<div class="chooseus-canvas-item">
+					<svg class="svg-hexagon">
+						<polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
+					</svg>
+					<!-- End Hexagon -->
+					<svg class="svg-triangle-dotted svg-tri-{{ service.style }}"  >
+						<polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
+					</svg>
+					<!-- End Triangle Dotted -->
+					<div class="triangle-img-warp tri{{ service.style }}">
+						<img src="{{ service.img_src }}" class="img-responsive" alt="Image">
+					</div>
+				</div>
+				<h4 class="text-cap white-text">{{ service.header }}</h4>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- End Section Services-->

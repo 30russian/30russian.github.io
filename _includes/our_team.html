@@ -1,0 +1,49 @@
+<!-- End Section Owl Our Team -->
+<section class="padding padding-bottom-0">
+	<div class="container">
+		<div class="row">
+			<div class="title-block">
+				<h2 class="title text-cap">Наша команда</h2>
+				<div class="divider divider-1">
+					<svg class="svg-triangle-icon-container">
+						<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+					</svg>
+				</div>
+			</div>
+			<!-- End Title -->
+			<div class="ourteam-warp ourteam-3-col">
+				<div class="customNavigation">
+					<a class="btn prev-team"><i class="fa fa-angle-left"></i></a>
+					<a class="btn next-team"><i class="fa fa-angle-right"></i></a>
+				</div>
+				<div id="owl-team-3-columns" class="owl-carousel owl-theme clearfix">
+					{% for member in site.data.our_team %}
+					<div class="item">
+						<div class="item-team">
+							<div class="portrait-member">
+								<img src="{{ member.img_src }}" class="img-responsive" alt="Image">
+							</div>
+							<div class="member-info text-center hvr-float-shadow">
+								<h5 class="text-cap">{{ member.fio }}</h5>
+								<p class="member-job">{{ member.job }}</p>
+								<div class="social-member">
+									{% if member.insta_name %}
+									<a href="https://www.instagram.com/{{ member.insta_name }}/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if member.vk_name %}
+									<a href="https://vk.com/{{ member.vk_name }}"><i class="fab fa-vk" aria-hidden="true"></i></a>
+									{% endif %}
+									{% if member.fb_name %}
+									<a href="https://www.facebook.com/{{ member.fb_name }}"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+					</div><!-- end item -->
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Section Owl Our Team -->

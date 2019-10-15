@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>{{ page.title }}</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		<!-- Font -->
+		{% if jekyll.environment == "production" %}
+		<link rel="stylesheet" href="assets/css/all.min.css">
+		{% else %}
+		<link rel="stylesheet" href="assets/css/all.css">
+		{% endif %}
+		<link rel="stylesheet" href="assets/css/elegant-font.css">
+
+		<!-- REVOLUTION STYLE SHEETS -->
+		<link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
+		<!-- REVOLUTION LAYERS STYLES -->
+		<link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
+		<!-- REVOLUTION NAVIGATION STYLES -->
+		<link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+
+		<!-- OWL CAROUSEL -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+
+		<!-- SCROLL BAR MOBILE MENU -->
+		<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+
+		<!-- Main Style -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="favicon.png">
+	</head>
+	<body>
+
+		{% include mobile_menu_section.html %}
+
+		<div id="page">
+			<div id="skrollr-body">
+				{% include slider_section.html %}
+
+				<header id="mainmenu" class="header-v2 header-fix" data-0="padding:10px;padding-left:40px;padding-right:40px;background:rgba(0,0,0,0)" data-251="padding:10px; padding-left:40px;padding-right:40px;top:0;background:rgba(0,0,0,1)">
+					<!-- Left Header -->
+					<div class="left-header">
+						<ul class="navi-level-1">
+							<li><a href="home.html" class="logo"><img src="http://placehold.it/119x29/ccc.jpg" class="img-responsive" alt="Image"></a></li>
+							<li class="hidden-xs hidden-sm"><a class="tel-header" href="{{ site.data.contacts.phone.href }}">{{ site.data.contacts.phone.number }}</a></li>
+							<li class="hidden-lg hidden-md"><a href="{{ site.data.contacts.phone.href }}"><i class="fas fa-phone" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Left Header -->
+
+					<!-- Right Header -->
+					<ul class="navi-level-1 sub-navi" >
+						<li>
+							<a href="{{ site.data.contacts.instagram.href }}"><i class="fab fa-instagram"></i></a>
+						</li>
+						<li>
+							<a href="{{ site.data.contacts.whatsapp.href }}"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+						</li>
+						<li class="hidden-lg hidden-md">
+							<a href="#/" class="mm-toggle"><i class="fas fa-bars" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<!-- End Right Header -->
+
+					<!-- Nav Header -->
+					<nav>
+						<ul class="navi-level-1 main-navi ">
+							<li><a href="index.html"><span>Главная</span></a></li>
+							<li class="has-sub"><a href="portfolioGrid_1.html"><span>Портфолио</span></a>
+								   <ul class="navi-level-2">
+										<li><a href="portfolioGrid_1.html">Grid 2 Columns V1</a></li>
+										<li><a href="portfolioGrid_2.html">Grid 3 Columns V1</a></li>
+										<li><a href="portfolioGrid_4.html">Grid 4 Columns V1</a></li>
+										<li><a href="portfolioGrid_2_col_V2.html">Grid 2 Columns V2</a></li>
+										<li><a href="portfolioGrid_3_col_V2.html">Grid 3 Columns V2</a></li>
+										<li><a href="portfolioGrid_4_col_V2.html">Grid 4 Columns V2</a></li>
+										<li><a href="portfolioDetail_1.html">Portfolio Details 1</a></li>
+										<li><a href="portfolioDetail_2.html">Portfolio Details 2</a></li>
+										<li><a href="portfolioDetail_3.html">Portfolio Details 3</a></li>
+									</ul>
+							</li>
+							<li class="has-sub"><a href="servicesList.html"><span>Услуги</span></a>
+								<ul class="navi-level-2">
+									<li><a href="servicesList.html">Services List</a></li>
+									<li><a href="services_detail_1.html">Services Details V1</a></li>
+									<li><a href="services_detail_2.html">Services Details V2</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html"><span>О нас</span></a></li>
+							<li class="has-sub"><a href="blogList.html"><span>Блог</span></a>
+								 <ul class="navi-level-2">
+									<li><a href="blogGrid_2_col.html">Grid 2 Columns</a></li>
+									<li><a href="blogGrid_3_col.html">Grid 3 Columns</a></li>
+									<li><a href="blogGrid_4_col.html">Grid 4 Columns</a></li>
+									<li><a href="blogList.html">Blog List</a></li>
+									<li><a href="blogDetail.html">Blog Detail</a></li>
+								</ul>
+							</li>
+							<li class="has-sub"><a href="contact.html"><span>Контакты</span></a>
+							  <ul class="navi-level-2">
+								  <li><a href="contact.html">Contact Style 1</a></li>
+								  <li><a href="contact_2.html">Contact Style 2</a></li>
+								  <li><a href="contact_3.html">Contact Style 3</a></li>
+							  </ul>
+							</li>
+						</ul>
+
+					</nav>
+					<!-- End Nav Header -->
+
+				</header>
+				<!-- End  Header -->
+
+				{% include what_we_do.html %}
+
+				{% include our_services.html %}
+
+				{% include our_team.html %}
+
+				{% include overlay.html %}
+
+				{% include lastest_projects.html %}
+
+				{% include lastest_blog.html %}
+
+				{% if page.partner_section %}
+					{% include partners_section.html %}
+				{% endif %}
+
+				{% if page.feedbacks_section %}
+					{% include feedbacks_section.html %}
+				{% endif %}
+
+				{% if page.subscribe_section %}
+					{% include subscribe_section.html %}
+				{% endif %}
+
+				<footer class="footer-v1">
+					<!-- Left Footer -->
+					<div class="footer-left">
+						<a href="home.html">
+							<img src="http://placehold.it/119x29/ccc.jpg " class="img-responsive" alt="Image">
+						</a>
+					</div>
+					<!-- End Left Footer -->
+
+					<!-- Nav Footer -->
+					<nav>
+						<ul>
+							<li>
+								<a class="text-cap" href="#">Портфолио</a>
+							</li>
+							<li>
+								<a class="text-cap" href="#">Услуги</a>
+							</li>
+							<li>
+								<a class="text-cap" href="#">О нас</a>
+							</li>
+							<li>
+								<a class="text-cap" href="#">Блог</a>
+							</li>
+							<li>
+								<a class="text-cap" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- End Nav Footer -->
+
+					<!-- Right Footer -->
+					<div class="footer-right">
+						<ul class="social social-footer">
+							<li class="instagram"><a href="{{ site.data.contacts.instagram.href }}"><i class="fab fa-instagram"></i></a></li>
+							<li class="whatsapp"><a href="{{ site.data.contacts.whatsapp.href }}"><i class="fab fa-whatsapp"></i></a></li>
+						  </ul>
+					</div>
+					<!-- End Right Footer -->
+				</footer>
+				<!-- End Footer -->
+
+				<section class="copyright">
+					<p>Copyright © 2019 Designed by Nice home studio. All rights reserved.</p>
+				</section>
+			</div>
+		</div>
+		<!-- End page -->
+		 
+		<a id="to-the-top"><i class="fa fa-angle-up"></i></a> 
+		<!-- Back To Top -->
+
+		<!-- SCRIPT -->
+		<script src="assets/js/vendor/jquery.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<script src="assets/js/plugins/jquery.waypoints.min.js"></script>
+		<script src="assets/js/plugins/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/plugins/skrollr.min.js"></script>
+		<script src="assets/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- REVOLUTION JS FILES -->
+		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+			(Load Extensions only on Local File Systems !  
+			The following part can be removed on Server for On Demand Loading) -->
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+		<!-- Intializing Slider-->
+		<script type="text/javascript" src="assets/js/plugins/slider.js"></script>
+
+		<!-- Mobile Menu -->
+		<script src="assets/js/plugins/jquery.mobile-menu.js"></script>
+
+		<!-- Initializing the isotope -->
+		<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+		<script src="assets/js/plugins/custom-isotope.js"></script>
+
+		<!-- Initializing Owl Carousel -->
+		<script src="assets/js/plugins/owl.carousel.js"></script>
+		<script src="assets/js/plugins/custom-owl.js"></script>
+
+		<!-- PreLoad -->
+		<script type="text/javascript" src="assets/js/plugins/royal_preloader.min.js"></script>
+		<script type="text/javascript">
+		(function($) {
+			"use strict";
+			Royal_Preloader.config({
+				mode: 'logo', // 'number', "text" or "logo"
+				logo: 'http://placehold.it/119x29/ccc.jpg',
+				timeout: 1,
+				showInfo: false,
+				opacity: 1,
+				background: ['#FFFFFF']
+			});
+		})(jQuery);
+		</script>
+
+		<!-- Global Js -->
+		<script src="assets/js/plugins/custom.js"></script>
+	</body>
+</html>

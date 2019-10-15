@@ -1,0 +1,35 @@
+<!-- Section What we do -->
+<section class="padding">
+	<div class="container">
+		<div class="row">
+			<div class="title-block">
+				<h2 class="title text-cap ">Что мы умеем</h2>
+				<div class="divider divider-1">
+					<svg class="svg-triangle-icon-container">
+						<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+					</svg>
+				</div>
+			</div>
+			<!-- End Title -->
+			<div class="row">
+				{% for wwd in site.data.what_we_do %}
+				<div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay=".25s">
+					<div class="block-img-full">
+						<a class="img-block" href="#"><img src="{{ wwd.img_src }}" class="img-responsive" alt="Image"></a>
+						<div class="text-box">
+							<h4 class="text-cap">{{ wwd.header }}</h4>
+							<p>
+								{{ wwd.description }}
+							</p>
+						</div>
+
+					</div>
+				</div>
+				{% endfor %}
+				<!-- End Col -->
+			</div>
+			<!-- End Row -->
+		</div>
+	</div>
+</section>
+<!-- End Section What we do -->
