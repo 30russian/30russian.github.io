@@ -14,41 +14,41 @@ filters:
 
 projects:
   - filter: Loft
-    img_src: assets/images/Project/1.jpg
+    img_src: /assets/images/Project/1.jpg
     title: Опытные специалисты
     category: Лофт
 
   - filter: Loft
-    img_src: assets/images/Project/2.jpg
+    img_src: /assets/images/Project/2.jpg
     title: Опытные специалисты
     category: Лофт
 
   - filter: Casual
-    img_src: assets/images/Project/3.jpg
+    img_src: /assets/images/Project/3.jpg
     title: Опытные специалисты
     category: Casual
 
   - filter: Casual
-    img_src: assets/images/Project/4.jpg
+    img_src: /assets/images/Project/4.jpg
     title: Опытные специалисты
     category: Casual
 
   - filter: Modern
-    img_src: assets/images/Project/5.jpg
+    img_src: /assets/images/Project/5.jpg
     title: Опытные специалисты
     category: Модерн
 
   - filter: Modern
-    img_src: assets/images/Project/6.jpg
+    img_src: /assets/images/Project/6.jpg
     title: Опытные специалисты
     category: Модерн
 
   - filter: Classic
-    img_src: assets/images/Project/7.jpg
+    img_src: /assets/images/Project/7.jpg
     title: Опытные специалисты
     category: Классика
 
   - filter: Classic
-    img_src: assets/images/Project/8.jpg
+    img_src: /assets/images/Project/8.jpg
     title: Опытные специалисты
     category: Классика

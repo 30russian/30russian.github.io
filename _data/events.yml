@@ -1,12 +1,12 @@
 #  - img_src: http://placehold.it/1140x640/ccc.jpg
-- img_src: assets/images/Blog/1.jpg
+- img_src: /assets/images/Blog/1.jpg
   href: blogDetail.html
   day: 21
   month: Мая
   header: Тренды 2019 в дизайне интерьеров
   description: Morbi vehicula a nibh in commodo. Aliquam quis dolor eget lectus pulvinar eu rhoncus ligula. Ut leo mauris, molestie imperdiet consequat in, varius ac sapien.
 
-- img_src: assets/images/Blog/2.jpg
+- img_src: /assets/images/Blog/2.jpg
   href: blogDetail.html
   day: 12
   month: Сентября

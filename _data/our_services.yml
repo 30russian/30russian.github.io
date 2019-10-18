@@ -1,16 +1,16 @@
 #- img_src: http://placehold.it/512x440/ccc.jpg
-- img_src: assets/images/Whychooseus/1.jpg
+- img_src: /assets/images/Whychooseus/1.jpg
   header: Дизайн интерьеров
   style:
 
-- img_src: assets/images/Whychooseus/2.jpg
+- img_src: /assets/images/Whychooseus/2.jpg
   header: Художественная роспись
   style: 2
 
-- img_src: assets/images/Whychooseus/3.jpg
+- img_src: /assets/images/Whychooseus/3.jpg
   header: Профессиональный ремонт
   style: 3
 
-- img_src: assets/images/Whychooseus/4.jpg
+- img_src: /assets/images/Whychooseus/4.jpg
   header: Архитектурное проектирование
   style: 4

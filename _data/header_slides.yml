@@ -1,4 +1,4 @@
-- img_src: assets/images/Slider/h2-1.jpg
+- img_src: /assets/images/Slider/h2-1.jpg
   header: Опытные специалисты
   slogan: Профессиональная экспертиза
   btn1_name: Портфолио
@@ -6,7 +6,7 @@
   btn2_name: Стоимость
   btn2_link: contact.html
 
-- img_src: assets/images/Slider/h3-1.jpg
+- img_src: /assets/images/Slider/h3-1.jpg
   header: Уникальные проекты
   slogan: Индивидуальный подход
   btn1_name: Портфолио
@@ -14,7 +14,7 @@
   btn2_name: Стоимость
   btn2_link: contact.html
 
-- img_src: assets/images/Slider/h4-1.jpg
+- img_src: /assets/images/Slider/h4-1.jpg
   header: Прозрачная стоимость
   slogan: Понятное ценообразование
   btn1_name: Портфолио

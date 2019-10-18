@@ -1,7 +1,19 @@
 host: 0.0.0.0
 
-#defaults:
-#  - scope:
-#      path: "index"
-#    values:
-#      partner_section: True
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: default

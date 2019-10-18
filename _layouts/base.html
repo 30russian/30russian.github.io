@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ page.title }}</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+	<!-- Font -->
+	{% if jekyll.environment == "production" %}
+	<link rel="stylesheet" href="/assets/css/all.min.css">
+	{% else %}
+	<link rel="stylesheet" href="/assets/css/all.css">
+	{% endif %}
+	<link rel="stylesheet" href="/assets/css/elegant-font.css">
+
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="/assets/revolution/css/settings.css">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<link rel="stylesheet" type="text/css" href="/assets/revolution/css/layers.css">
+	<!-- REVOLUTION NAVIGATION STYLES -->
+	<link rel="stylesheet" type="text/css" href="/assets/revolution/css/navigation.css">
+
+	<!-- OWL CAROUSEL -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.css">
+
+	<!-- SCROLL BAR MOBILE MENU -->
+	<link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.css" />
+
+	<!-- Main Style -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+
+{% include mobile_menu_section.html %}
+
+<div id="page">
+	<div id="skrollr-body">
+		{{ content }}
+
+		{% include footer.html %}
+
+		<section class="copyright">
+			<p>Copyright © 2019 Designed by Nice home studio. All rights reserved.</p>
+		</section>
+	</div>
+</div>
+<!-- End page -->
+
+<a id="to-the-top"><i class="fa fa-angle-up"></i></a>
+<!-- Back To Top -->
+
+<!-- SCRIPT -->
+<script src="/assets/js/vendor/jquery.min.js"></script>
+<script src="/assets/js/vendor/bootstrap.min.js"></script>
+<script src="/assets/js/plugins/jquery.waypoints.min.js"></script>
+<script src="/assets/js/plugins/wow.min.js"></script>
+<script type="text/javascript" src="/assets/js/plugins/skrollr.min.js"></script>
+<script src="/assets/js/plugins/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS
+	(Load Extensions only on Local File Systems !
+	The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<!-- Intializing Slider-->
+<script type="text/javascript" src="/assets/js/plugins/slider.js"></script>
+
+<!-- Mobile Menu -->
+<script src="/assets/js/plugins/jquery.mobile-menu.js"></script>
+
+<!-- Initializing the isotope -->
+<script src="/assets/js/plugins/isotope.pkgd.min.js"></script>
+<script src="/assets/js/plugins/custom-isotope.js"></script>
+
+<!-- Initializing Owl Carousel -->
+<script src="/assets/js/plugins/owl.carousel.js"></script>
+<script src="/assets/js/plugins/custom-owl.js"></script>
+
+<!-- PreLoad -->
+<script type="text/javascript" src="/assets/js/plugins/royal_preloader.min.js"></script>
+<script type="text/javascript">
+	(function($) {
+		"use strict";
+		Royal_Preloader.config({
+			mode: 'logo', // 'number', "text" or "logo"
+			logo: 'http://placehold.it/119x29/ccc.jpg',
+			timeout: 1,
+			showInfo: false,
+			opacity: 1,
+			background: ['#FFFFFF']
+		});
+	})(jQuery);
+</script>
+
+<!-- Global Js -->
+<script src="/assets/js/plugins/custom.js"></script>
+</body>
+</html>

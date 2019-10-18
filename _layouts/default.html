@@ -1,0 +1,25 @@
+---
+layout: base
+---
+{% include header.html %}
+
+<section>
+	<div class="sub-header sub-header-1 sub-header-our-services-2 fake-position">
+		<div class="sub-header-content">
+			<h2 class="text-cap white-text">{{ page.header }}</h2>
+			<ol class="breadcrumb breadcrumb-arc text-cap">
+				<li>
+					<a href="/">Главная</a>
+				</li>
+				{% if page.parent %}
+				<li>
+					<a href="{{ page.parent.href }}">{{ page.parent.header }}</a>
+				</li>
+				{% endif %}
+				<li class="active">{{ page.header }}</li>
+			</ol>
+		</div>
+	</div>
+</section>
+
+{{ content }}
