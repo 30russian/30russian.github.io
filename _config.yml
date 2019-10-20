@@ -8,12 +8,12 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
       layout: default
 
   - scope:
       path: ""
-      type: "services"
+      type: services
     values:
       layout: default

@@ -1,0 +1,29 @@
+- href: /
+  name: Главная
+
+- href: /portfolio
+  name: Портфолио
+
+- href: /services
+  name: Услуги
+  sub:
+    - href: /services/interrior-desing
+      name: Дизайн интерьера
+
+    - href: /services/art-painting
+      name: Художественная роспись
+
+    - href: /services/renovation
+      name: Профессиональный ремонт
+
+    - href: /services/arc-design
+      name: Архитектурное проектирование
+
+- href: /about
+  name: О нас
+
+- href: /blog
+  name: Блог
+
+- href: /contacts
+  name: Контакты

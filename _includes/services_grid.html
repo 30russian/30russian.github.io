@@ -2,7 +2,8 @@
 <section class="padding padding-bot-30">
 	<div class="container">
 		<div class="row">
-			{% for service in site.services %}
+			{% assign services = site.services | sort: "order" %}
+			{% for service in services %}
 			<div class="col-md-6">
 				<div class="block-img-full service-item">
 					<a class="img-block" href="{{ service.url }}"><img src="{{ service.img_src }}" class="img-responsive" alt="Image"></a>

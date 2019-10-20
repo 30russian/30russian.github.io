@@ -11,48 +11,18 @@
 		<!-- Mobile Menu -->
 		<div class="mCustomScrollbar light" data-mcs-theme="minimal-dark">
 			<ul>
+				{% for menu_item in site.data.menu %}
 				<li>
-					<a href="default.html"><i class="icon-home"></i> Главная</a>
-				</li>
-				<li><a href="portfolioGrid_1.html"><span>Портфолио</span></a>
+					<a href="{{ menu_item.href }}"><i class="icon-home"></i>{{ menu_item.name }}</a>
+					{% if menu_item.sub %}
 					<ul>
-						<li><a href="portfolioGrid_1.html">Grid 2 Columns V1</a></li>
-						<li><a href="portfolioGrid_2.html">Grid 3 Columns V1</a></li>
-						<li><a href="portfolioGrid_4.html">Grid 4 Columns V1</a></li>
-						<li><a href="portfolioGrid_2_col_V2.html">Grid 2 Columns V2</a></li>
-						<li><a href="portfolioGrid_3_col_V2.html">Grid 3 Columns V2</a></li>
-						<li><a href="portfolioGrid_4_col_V2.html">Grid 4 Columns V2</a></li>
-						<li><a href="portfolioDetail_1.html">Portfolio Details 1</a></li>
-						<li><a href="portfolioDetail_2.html">Portfolio Details 2</a></li>
-						<li><a href="portfolioDetail_3.html">Portfolio Details 3</a></li>
+						{% for sub in menu_item.sub %}
+						<li><a href="{{ sub.href }}">{{ sub.name }}</a></li>
+						{% endfor %}
 					</ul>
+					{% endif %}
 				</li>
-				<li><a href="servicesList.html"><span>Услуги</span></a>
-					<ul>
-						<li><a href="servicesList.html">Services List</a></li>
-						<li><a href="services_detail_1.html">Services Details V1</a></li>
-						<li><a href="services_detail_2.html">Services Details V2</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="about.html"><span>О нас</span></a>
-				</li>
-				<li><a href="blogList.html"><span>Блог</span></a>
-					<ul>
-						<li><a href="blogGrid_2_col.html">Grid 2 Columns</a></li>
-						<li><a href="blogGrid_3_col.html">Grid 3 Columns</a></li>
-						<li><a href="blogGrid_4_col.html">Grid 4 Columns</a></li>
-						<li><a href="blogList.html">Blog List</a></li>
-						<li><a href="blogDetail.html">Blog Detail</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.html"><span>Контакты</span></a>
-					<ul>
-						<li><a href="contact.html">Contact Style 1</a></li>
-						<li><a href="contact_2.html">Contact Style 2</a></li>
-						<li><a href="contact_3.html">Contact Style 3</a></li>
-					</ul>
-				</li>
+				{% endfor %}
 			</ul>
 			<div class="footer-mobile-menu">
 				<ul class="social">
