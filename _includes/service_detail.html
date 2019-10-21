@@ -13,10 +13,13 @@
 					{% endif %}
 					{% endfor %}
 				</ul>
+				{% assign menu_item = site.data.menu | where: 'id', 'contacts' | first %}
+				{% if menu_item %}
 				<div class="box-question-sidebar text-center">
 					<p>У Вас есть вопросы?<br>Свяжитесь с нами</p>
-					<a href="#" class="ot-btn btn-main-color text-cap">Контакты</a>
+					<a href="{{ menu_item.href }}" class="ot-btn btn-main-color text-cap">Контакты</a>
 				</div>
+				{% endif %}
 			</div>
 			<div class="main-services main-services-left">
 				<div class="slide-services">

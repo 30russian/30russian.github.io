@@ -1,10 +1,15 @@
-- href: /
+- id: main
+  href: /
   name: Главная
 
-- href: /portfolio
+- id: portfolio
+  footer: true
+  href: /portfolio
   name: Портфолио
 
-- href: /services
+- id: services
+  footer: true
+  href: /services
   name: Услуги
   sub:
     - href: /services/interrior-desing
@@ -19,11 +24,17 @@
     - href: /services/arc-design
       name: Архитектурное проектирование
 
-- href: /about
+- id: about
+  footer: true
+  href: /about
   name: О нас
 
-- href: /blog
+- id: blog
+  footer: true
+  href: /blog
   name: Блог
 
-- href: /contacts
+- id: contacts
+  footer: true
+  href: /contacts
   name: Контакты

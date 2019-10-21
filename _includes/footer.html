@@ -10,21 +10,12 @@
 	<!-- Nav Footer -->
 	<nav>
 		<ul>
+			{% assign footer_items = site.data.menu | where: 'footer', true %}
+			{% for menu_item in footer_items %}
 			<li>
-				<a class="text-cap" href="#">Портфолио</a>
+				<a class="text-cap" href="{{ menu_item.href }}">{{ menu_item.name }}</a>
 			</li>
-			<li>
-				<a class="text-cap" href="#">Услуги</a>
-			</li>
-			<li>
-				<a class="text-cap" href="#">О нас</a>
-			</li>
-			<li>
-				<a class="text-cap" href="#">Блог</a>
-			</li>
-			<li>
-				<a class="text-cap" href="#">Контакты</a>
-			</li>
+			{% endfor %}
 		</ul>
 	</nav>
 	<!-- End Nav Footer -->
