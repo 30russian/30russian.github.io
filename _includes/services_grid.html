@@ -6,11 +6,11 @@
 			{% for service in services %}
 			<div class="col-md-6">
 				<div class="block-img-full service-item">
-					<a class="img-block" href="{{ service.url }}"><img src="{{ service.img_src }}" class="img-responsive" alt="Image"></a>
+					<a class="img-block" href="{{ service.url }}"><img src="{{ service.summary.img_src }}" class="img-responsive" alt="Image"></a>
 					<div class="text-box">
-						<h4 class="text-cap">{{ service.header2 }}</h4>
+						<h4 class="text-cap">{{ service.summary.header }}</h4>
 						<p>
-							{{ service.description }}
+							{{ service.summary.description }}
 						</p>
 						<a class="text-cap view-more" href="{{ service.url }}">Подробнее...</a>
 					</div>

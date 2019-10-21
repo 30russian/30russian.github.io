@@ -1,0 +1,55 @@
+<!-- Section Service detail -->
+<section class="padding">
+	<div class="container">
+		<div class="row">
+			<div class="sidebar-services sidebar-right">
+				<ul class="sidebar-style-2">
+					{% assign services = site.services | sort: "order" %}
+					{% for service in services %}
+					{% if service.url == page.url %}
+					<li class="active"><a href="#">{{ service.header }}</a></li>
+					{% else %}
+					<li><a href="{{ service.url }}">{{ service.header }}</a></li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+				<div class="box-question-sidebar text-center">
+					<p>У Вас есть вопросы?<br>Свяжитесь с нами</p>
+					<a href="#" class="ot-btn btn-main-color text-cap">Контакты</a>
+				</div>
+			</div>
+			<div class="main-services main-services-left">
+				<div class="slide-services">
+					<div class="customNavigation">
+						<a class="btn prev-detail-services"><i class="fa fa-angle-left"></i></a>
+						<a class="btn next-detail-services"><i class="fa fa-angle-right"></i></a>
+					</div>
+					<div id="sync3" class="owl-carousel owl-detail-services clearfix">
+						{% for service in site.services %}
+							{% if service.url == page.url %}
+							{% for image in service.details.images %}
+						<div class="item ">
+							<img src="{{ image }}" class="img-responsive" alt="Image">
+						</div>
+							{% endfor %}
+							{% endif %}
+						{% endfor %}
+					</div>
+					<!-- End Main Sync owl -->
+					<div id="sync4" class="owl-carousel thumb-service-slide">
+						{% for service in site.services %}
+							{% if service.url == page.url %}
+							{% for image in service.details.images %}
+						<div class="item"><img src="{{ image }}" class="img-responsive" alt="Image"></div>
+							{% endfor %}
+							{% endif %}
+						{% endfor %}
+					</div>
+					<!-- End Navithumbnail Owl Sync -->
+				</div>
+				{{ include.content }}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Section Service detail -->
