@@ -36,10 +36,13 @@
 	</div>
 	<!-- End  -->
 
+	{% assign menu_item = site.data.menu | where: 'id', 'portfolio' | first %}
+	{% if menu_item %}
 	<div class="overlay-arc">
 		<div class="layer-1">
-			<a href="#" class="ot-btn btn-dark-color text-cap">Все проекты</a>
+			<a href="{{ menu_item.href }}" class="ot-btn btn-dark-color text-cap">Все проекты</a>
 		</div>
 	</div>
+	{% endif %}
 </section>
 <!-- End Section Isotop Lastest Project -->

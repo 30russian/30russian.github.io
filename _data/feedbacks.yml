@@ -1,5 +1,5 @@
 #- img_src: http://placehold.it/262x262/ccc.jpg
-- img_src: //assets/images/Testimonials/1.jpg
+- img_src: /assets/images/Testimonials/1.jpg
   fio: Безроднов Сергей
   job: CEO Finanace Theme Group
   text: Morbi auctor vel mauris facilisis lacinia. Aenean suscipit lorem leo, et hendrerit odio fermentum et. Donec ac dolor eros. Mauris arcu nunc, iaculis sit amet lacus iaculis, faucibus faucibus nunc. Vestibulum sit amet lacinia massa

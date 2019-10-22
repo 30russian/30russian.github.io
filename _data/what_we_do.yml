@@ -2,15 +2,19 @@
 - img_src: /assets/images/Services/1.jpg
   header: <mark>Лофт</mark> интерьер
   description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+  delay: .25s
 
 - img_src: /assets/images/Services/2.jpg
   header: <mark>Casual</mark> дизайн
   description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+  delay: .5s
 
 - img_src: /assets/images/Services/3.jpg
   header: Стиль <mark>модерн</mark>
   description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+  delay: .75s
 
 - img_src: /assets/images/Services/4.jpg
   header: <mark>Классика</mark>
   description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+  delay: 1s

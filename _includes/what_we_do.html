@@ -13,7 +13,7 @@
 			<!-- End Title -->
 			<div class="row">
 				{% for wwd in site.data.what_we_do %}
-				<div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay=".25s">
+				<div class="col-sm-6 col-md-3 wow fadeInRight" data-wow-delay="{{ wwd.delay }}">
 					<div class="block-img-full">
 						<a class="img-block" href="#"><img src="{{ wwd.img_src }}" class="img-responsive" alt="Image"></a>
 						<div class="text-box">
