@@ -5,23 +5,34 @@
 			<a href="#" data-filter="*" class="current text-cap">
 				<h4>Все проекты</h4>
 			</a>
-			{% for filter in site.data.projects.filters %}
-			<a href="#" data-filter=".{{ filter.filter }}" class="text-cap">
-				<h4>{{ filter.category }}</h4>
+			{% capture filters_list %}
+			{% for project in site.portfolio %}
+				{{ project.filter }}|{{ project.category }}
+				{% if forloop.last == false %}::{% endif%}
+			{% endfor %}
+			{% endcapture %}
+			{% assign filters_array = filters_list | split: '::' | uniq %}
+
+			{% for filter in filters_array %}
+				{% assign filter_vals = filter | split: '|' %}
+			<a href="#" data-filter=".{{ filter_vals[0] | strip }}" class="text-cap">
+				<h4>{{ filter_vals[1] | strip }}</h4>
 			</a>
 			{% endfor %}
 		</div>
 		<!-- End Project Fillter -->
 
 		<div class="clearfix projectContainer portfolio-grid-2-container">
-			{% for project in site.data.projects.projects %}
+			{% assign projects = site.portfolio | sort: "order" %}
+
+			{% for project in projects %}
 			<div class="element-item  {{ project.filter }}">
-				<a class="portfolio-img-demo" href="{{ project.href }}"><img src="{{ project.img_src }}" class="img-responsive" alt="Image"></a>
+				<a class="portfolio-img-demo" href="{{ project.url }}"><img src="{{ project.img_src }}" class="img-responsive" alt="Image"></a>
 				<div class="project-info">
-					<a href="{{ project.href }}">
-						<h4 class="title-project text-cap text-cap">{{ project.title }}</h4>
+					<a href="{{ project.url }}">
+						<h4 class="title-project text-cap text-cap">{{ project.header }}</h4>
 					</a>
-					<a href="{{ project.href }}" class="cateProject">{{ project.category }}</a>
+					<a href="{{ project.url }}" class="cateProject">{{ project.category }}</a>
 				</div>
 			</div>
 			{% endfor %}

@@ -1,0 +1,73 @@
+<!-- Project Details -->
+<section class="mgt60">
+	<div class="container">
+		<div class="row">
+			<div class="single-project-warp">
+				<div class="row">
+					<div class="col-md-6">
+						<!-- Project Images -->
+						{{ include.img-demo }}
+						<!-- End Project Images -->
+					</div>
+					<div class="col-md-6">
+						<h3 class="text-cap">{{ page.header }}</h3>
+
+						<!-- Project Info -->
+						{{ include.info }}
+						<!-- End Project Info -->
+
+						<div class="clearfix mgb20"></div>
+						<div class="divider-line mgb20"></div>
+
+						<!-- Project Description -->
+						{{ include.description }}
+						<!-- End Project Description -->
+
+						<div class="clearfix mgb20"></div>
+						<div class="divider-line mgb20"></div>
+						<div class="social-share">
+							<p class="text-cap">Поделиться:</p>
+							<a href="#"><i class="fab fa-facebook"></i></a>
+							<a href="#"><i class="fab fa-vk"></i></a>
+							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- End Row -->
+				<div class="divider-line"></div>
+				<p class="arr-pj-container text-center">
+					{% assign projects = site.portfolio | sort: "order" %}
+					{% assign rev_projects = projects | reverse %}
+
+					{% for project in projects %}
+						{% if project.order <  page.order%}
+							{% assign prev = project %}
+						{% else %}
+							{% break %}
+						{% endif %}
+					{% endfor %}
+
+					{% for project in rev_projects %}
+						{% if project.order >  page.order%}
+							{% assign next = project %}
+						{% else %}
+							{% break %}
+						{% endif %}
+					{% endfor %}
+
+					{% if prev %}
+					<a href="{{ prev.url }}" class="prev-pj-arr text-cap"><i class="fa fa-angle-left" aria-hidden="true"></i>Назад</a>
+					{% endif %}
+					<a href="/portfolio" class="btn-portfolio"><i class="fa fa-th" aria-hidden="true"></i></a>
+					{% if next %}
+					<a href="{{ next.url }}" class="next-pj-arr text-cap">Вперёд<i class="fa fa-angle-right" aria-hidden="true"></i>
+					{% endif %}
+					</a>
+				</p>
+				<div class="divider-line"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Project Details -->
