@@ -1,0 +1,44 @@
+<!-- Section Owl Testimonials -->
+<section class="padding padding-bottom-0">
+	<div class="container">
+		<div class="row">
+			<h2 class="title text-cap">Отзывы наших клиентов</h2>
+			<div class="divider divider-1">
+				<svg class="svg-triangle-icon-container">
+					<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+				</svg>
+			</div>
+			<!-- End Title -->
+			<div class="testimonial-warp testimonial-2-col testimonial-2-col-about">
+				<div class="customNavigation">
+					<a class="btn prev-testimonials-2-columns"><i class="fa fa-angle-left"></i></a>
+					<a class="btn next-testimonials-2-columns"><i class="fa fa-angle-right"></i></a>
+				</div>
+				<div id="owl-testimonials-2-columns" class="owl-carousel owl-theme clearfix">
+					{% assign len = site.data.feedbacks | size %}
+					{% assign cycles = len | divided_by: 2.0 | ceil | minus: 1 %}
+					{% for i in (0..cycles) %}
+					<div class="item ">
+						{% for k in (0..1) %}
+						{% assign l = i | times: 2 | plus: k %}
+						{% assign feedback = site.data.feedbacks[l] %}
+						{% if feedback %}
+						<div class="item-testimonials  item-testimonials-about text-left">
+							<p class="quote-icon">“</p>
+							<p><i>{{ feedback.text }}</i></p>
+							<div class="avatar-testimonials">
+								<img src="http://placehold.it/262x262/ccc.jpg" class="img-responsive" alt="Image">
+							</div>
+							<h4 class="name-testimonials text-cap">{{ feedback.fio }}</h4>
+							<span class="job-testimonials">{{ feedback.job }}</span>
+						</div>
+						{% endif %}
+						{% endfor %}
+					</div><!-- end item -->
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Section Owl Testimonials -->
