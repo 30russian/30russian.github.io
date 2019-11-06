@@ -1,20 +1,36 @@
 #- img_src: http://placehold.it/810x451/ccc.jpg
-- img_src: /assets/images/Services/1.jpg
-  header: <mark>Лофт</mark> интерьер
-  description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+- img_src: /assets/images/Interriors/Loft.jpg
+  header: <mark>Лофт / Индастриал</mark> <br /> интерьер
+  description: '- Простая обработка поверхностей: кирпич, бетон, штукатурка, окраска <br \>
+                - Открытые коммуникации <br \>
+                - Смешение стилей в мебели и отделке <br \>
+                - Простая, лаконичная и функциональная мебель <br \>'
   delay: .25s
 
-- img_src: /assets/images/Services/2.jpg
-  header: <mark>Casual</mark> дизайн
-  description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+- img_src: /assets/images/Interriors/Casual.jpg
+  header: <mark>Casual</mark> <br /> дизайн
+  description: '- Повседневная обстановка <br />
+                - Комфорт стоит на первом месте <br />
+                - Использование пастельных тонов <br />
+                - Приятный, привлекательный и дорогой текстиль <br />
+                - Мебель в интерьере мягкая, удобная и непринужденная'
   delay: .5s
 
-- img_src: /assets/images/Services/3.jpg
-  header: Стиль <mark>модерн</mark>
-  description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+- img_src: /assets/images/Interriors/Skandinavian.jpg
+  header: <mark>Скандинавский</mark> стиль
+  description: '- Свободное пространство <br />
+                - Совмещенные комнаты <br />
+                - "Открытые" окна <br />
+                - Светлые, тёплые тона отделки <br />
+                - Уравновешенная геометрия пространства <br />
+                - Натуральное дерево и эко-декор'
   delay: .75s
 
-- img_src: /assets/images/Services/4.jpg
-  header: <mark>Классика</mark>
-  description: Про фесси ональная экспертиза Про фесси ональная экспертиза Про фесси ональная экспертиза
+- img_src: /assets/images/Interriors/Neoclassic.jpg
+  header: <mark>Неоклассика</mark> <br /> <br />
+  description: '- Богатое убранство и качественные материалы <br />
+                - Природные мотивы и цветовая гамма <br />
+                - Просторная, комфортабельная обстановка <br />
+                - Симметрия и упорядоченность <br />
+                - Классическая планировка и высокие потолки'
   delay: 1s

@@ -3,7 +3,7 @@
   header: Дизайн интерьеров
   style:
 
-- img_src: /assets/images/Whychooseus/2.jpg
+- img_src: /assets/images/Services/Mural.jpg
   header: Художественная роспись
   style: 2
 
@@ -11,6 +11,6 @@
   header: Профессиональный ремонт
   style: 3
 
-- img_src: /assets/images/Whychooseus/4.jpg
+- img_src: /assets/images/Services/Architecture.jpg
   header: Архитектурное проектирование
   style: 4
