@@ -1,23 +1,39 @@
 - img_src: /assets/images/Slider/h2-1.jpg
-  header: Опытные специалисты
-  slogan: Профессиональная экспертиза
+  header: Nice home studio
+  slogan: Единство формы и функциональности
   btn1_name: Портфолио
-  btn1_link: portfolioGrid_1.html
+  btn1_link: /portfolio
   btn2_name: Стоимость
-  btn2_link: contact.html
+  btn2_link: /contacts
 
 - img_src: /assets/images/Slider/h3-1.jpg
-  header: Уникальные проекты
-  slogan: Индивидуальный подход
-  btn1_name: Портфолио
-  btn1_link: portfolioGrid_1.html
-  btn2_name: Стоимость
-  btn2_link: contact.html
-
-- img_src: /assets/images/Slider/h4-1.jpg
   header: Прозрачная стоимость
   slogan: Понятное ценообразование
   btn1_name: Портфолио
-  btn1_link: portfolioGrid_1.html
+  btn1_link: /portfolio
   btn2_name: Стоимость
-  btn2_link: contact.html
+  btn2_link: /contacts
+
+- img_src: /assets/images/Slider/h4-1.jpg
+  header: Планирование работ
+  slogan: Соблюдение сроков
+  btn1_name: Портфолио
+  btn1_link: /portfolio
+  btn2_name: Стоимость
+  btn2_link: /contacts
+
+- img_src: /assets/images/Slider/h4-2.jpg
+  header: Опытные специалисты
+  slogan: Качественные работы
+  btn1_name: Портфолио
+  btn1_link: /portfolio
+  btn2_name: Стоимость
+  btn2_link: /contacts
+
+- img_src: /assets/images/Slider/h4-3.jpg
+  header: Уникальные проекты
+  slogan: Индивидуальный подход
+  btn1_name: Портфолио
+  btn1_link: /portfolio
+  btn2_name: Стоимость
+  btn2_link: /contacts
