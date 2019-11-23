@@ -1,5 +1,5 @@
 #- img_src: http://placehold.it/512x440/ccc.jpg
-- img_src: /assets/images/Whychooseus/1.jpg
+- img_src: /assets/images/Services/Interrior.jpg
   header: Дизайн интерьеров
   style:
 
@@ -7,7 +7,7 @@
   header: Художественная роспись
   style: 2
 
-- img_src: /assets/images/Whychooseus/3.jpg
+- img_src: /assets/images/Services/Renovation.jpg
   header: Профессиональный ремонт
   style: 3
 
