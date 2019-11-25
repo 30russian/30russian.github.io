@@ -5,13 +5,20 @@
 			<a href="#" data-filter="*" class="current text-cap">
 				<h4>Все проекты</h4>
 			</a>
-			{% capture filters_list %}
-			{% for project in site.portfolio %}
-				{{ project.filter }}|{{ project.category }}
-				{% if forloop.last == false %}::{% endif%}
+			{% assign ordered_projects = site.portfolio | sort: "order" %}
+
+			{% assign filters_list = "" %}
+			{% for project in ordered_projects %}
+				{% assign filters_list = filters_list | append: project.filter %}
+				{% assign filters_list = filters_list | append: "|" %}
+				{% assign filters_list = filters_list | append: project.category %}
+
+				{% if forloop.last == false %}
+					{% assign filters_list = filters_list | append: "::" %}
+				{% endif%}
 			{% endfor %}
-			{% endcapture %}
-			{% assign filters_array = filters_list | split: '::' | uniq %}
+
+			{% assign filters_array = filters_list | strip | split: '::' | uniq %}
 
 			{% for filter in filters_array %}
 				{% assign filter_vals = filter | split: '|' %}
@@ -23,9 +30,7 @@
 		<!-- End Project Fillter -->
 
 		<div class="clearfix projectContainer portfolio-grid-2-container">
-			{% assign projects = site.portfolio | sort: "order" %}
-
-			{% for project in projects %}
+			{% for project in ordered_projects %}
 			<div class="element-item  {{ project.filter }}">
 				<a class="portfolio-img-demo" href="{{ project.url }}"><img src="{{ project.img_src }}" class="img-responsive" alt="Image"></a>
 				<div class="project-info">

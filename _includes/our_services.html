@@ -11,7 +11,8 @@
 		</div>
 		<!-- End Title -->
 		<div class="chooseus-container text-center">
-			{% for service in site.data.our_services %}
+			{% assign services = site.services | sort: "order" %}
+			{% for service in services %}
 			<div class="chooseus-item mgb0">
 
 				<div class="chooseus-canvas-item">
@@ -19,15 +20,16 @@
 						<polygon class="hexagon" points="285 100,285 250,155 325,25 250,25 100,155 25"></polygon>
 					</svg>
 					<!-- End Hexagon -->
-					<svg class="svg-triangle-dotted svg-tri-{{ service.style }}"  >
+					<svg class="svg-triangle-dotted svg-tri-{{ service.summary.style }}"  >
 						<polygon class="triangle-div" points="2 220,254 220,128 0"></polygon>
 					</svg>
 					<!-- End Triangle Dotted -->
-					<div class="triangle-img-warp tri{{ service.style }}">
-						<img src="{{ service.img_src }}" class="img-responsive" alt="Image">
+					<div class="triangle-img-warp tri{{ service.summary.style }}">
+						<a href="{{ service.url }}"><img src="{{ service.summary.tri_img_src }}" class="img-responsive" alt="Image"></a>
 					</div>
 				</div>
-				<h4 class="text-cap white-text">{{ service.header }}</h4>
+
+				<a href="{{ service.url }}"><h4 class="text-cap white-text">{{ service.header }}</h4></a>
 			</div>
 			{% endfor %}
 		</div>
