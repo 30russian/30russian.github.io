@@ -2,34 +2,34 @@
 - img_src: /assets/images/Ourteam/1.jpg
   fio: Безроднов Сергей
   job: Главный архитектор
-  insta_name: nicehomestudio
-  vk_name: nicehomestudio
-
+#  insta_name: nicehomestudio
+#  vk_name: nicehomestudio
+#  fb_name: nicehomestudio
 
 - img_src: /assets/images/Ourteam/2.jpg
-  fio: Слепокуров Алексей
-  job: Художник и фотограф
-  insta_name: nicehomestudio
-  vk_name: nicehomestudio
-  fb_name: nicehomestudio
+  fio: Безроднова Виктория
+  job: Дизайнер
+#  insta_name: nicehomestudio
+#  vk_name: nicehomestudio
+#  fb_name: nicehomestudio
 
 - img_src: /assets/images/Ourteam/3.jpg
-  fio: Безроднова Вика
-  job: Дизайнер
-  insta_name: nicehomestudio
-  vk_name: nicehomestudio
-  fb_name: nicehomestudio
+  fio: Слепокуров Сергей
+  job: Художник и фотограф
+  insta_name: slepokurovsergei
+#  vk_name: nicehomestudio
+#  fb_name: nicehomestudio
 
 - img_src: /assets/images/Ourteam/4.jpg
   fio: Слепокурова Анна
   job: Архитектор
-  insta_name: nicehomestudio
-  vk_name: nicehomestudio
-  fb_name: nicehomestudio
+  insta_name: anuyshkin76
+#  vk_name: nicehomestudio
+#  fb_name: nicehomestudio
 
 - img_src: /assets/images/Ourteam/5.jpg
-  fio: Блашко Ольга
-  job: Маркетолог
+  fio: Блашко Евгений
+  job: CEO
   insta_name: nicehomestudio
-  vk_name: nicehomestudio
-  fb_name: nicehomestudio
+#  vk_name: nicehomestudio
+#  fb_name: nicehomestudio
