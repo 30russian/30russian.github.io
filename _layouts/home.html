@@ -15,7 +15,9 @@ layout: base
 
 {% include lastest_projects.html %}
 
-{% include lastest_blog.html %}
+{% if page.blog_section %}
+	{% include lastest_blog.html %}
+{% endif %}
 
 {% if page.partner_section %}
 	{% include partners_section.html %}

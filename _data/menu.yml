@@ -29,10 +29,10 @@
   href: /about
   name: О нас
 
-- id: blog
-  footer: true
-  href: /blog
-  name: Блог
+#- id: blog
+#  footer: true
+#  href: /blog
+#  name: Блог
 
 - id: contacts
   footer: true
