@@ -1,4 +1,7 @@
 host: 0.0.0.0
+url: "https://nhstudio.ru"
+plugins:
+  - jekyll-seo-tag
 
 collections:
   services:
