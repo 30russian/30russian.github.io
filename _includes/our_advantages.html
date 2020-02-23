@@ -1,0 +1,36 @@
+<!-- Section How This Would Help You -->
+<section class="padding padding-bot-30">
+	<div class="container">
+		<div class="row">
+			<h2 class="title text-cap">Наши преимущества</h2>
+			<div class="divider divider-1">
+				<svg class="svg-triangle-icon-container">
+					<polygon class="svg-triangle-icon" points="6 11,12 0,0 0"></polygon>
+				</svg>
+			</div>
+			<!-- End Title -->
+
+			<div class="left-icon-container">
+				{% for item in site.data.our_advantages %}
+				<div class="col-md-6">
+					<article class="media-style left-icon-item">
+						<div class="media">
+							<div class="media-left">
+								<i class="{{ item.class }}" aria-hidden="true"></i>
+							</div>
+							<div class="media-body">
+								<h4 class="">{{ item.header }}</h4>
+								<p>
+									{{ item.description }}
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+</section>
+<!-- End Section How This Would Help You -->
