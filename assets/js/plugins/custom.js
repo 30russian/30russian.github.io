@@ -9,9 +9,10 @@ $(document).ready(function(){
     });
 
 
-       
+    // Scroll to top when Google forms Next button clicked
+    $('iframe').load(function(){$('html,body').animate({scrollTop: 0}, 'slow');});
 
-     
+
      // <!-- Intializing Navi Menu-->
       $("#mobile-menu").mobileMenu({
                 MenuWidth: 250,
@@ -24,14 +25,14 @@ $(document).ready(function(){
                 ClassName : "mobile-menu"
             });
     //Mobile Menu Scroll Enabel
-    
+
     // --------------------------------------------------
     // Back To Top
     // --------------------------------------------------
     var offset = 450;
     var duration = 500;
-    
-            
+
+
    $(window).on('scroll', function(){
          if ($(this).scrollTop() > offset) {
                 $('#to-the-top').fadeIn(duration);
@@ -66,7 +67,7 @@ $(document).ready(function(){
             }
 
         }
-        
+
     );
 // =====================================================
  });
